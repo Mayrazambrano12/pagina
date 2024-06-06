@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz Responsiva con Bootstrap</title>
+  <!-- Enlace al archivo CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e9ecef; 
+    }
+    .navbar {
+      background-color: #007bff !important; 
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+    .container {
+      padding: 20px;
+    }
+    .jumbotron {
+      background-color: #28a745; 
+      color: #fff;
+      padding: 40px;
+      margin-bottom: 20px;
+      border-radius: 0;
+    }
+    .contenido {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .contacto {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffc0cb;
+      border-radius: 5px;
+    }
+    .imagen-contacto {
+      text-align: center;
+    }
+    .color-inicio {
+      background-color: #ffc107;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .texto-explicativo {
+      background-color: #17a2b8;
+      color: #fff;
+      padding: 40px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Sitio Web Responsive</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mision">Misión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#vision">Visión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <div class="jumbotron">
+      <center>
+        <h1 class="display-4">¡Bienvenido!</h1>
+        <p class="lead">¡Gracias por visitar nuestro sitio web! Aquí encontrarás información sobre nuestra institución y nuestros servicios.</p>
+      </center>
+    </div>
+    <div class="color-inicio">
+      <h2 class="text-center">Nuestra Misión</h2>
+      <p class="text-center">En nuestro sitio web, nos esforzamos por ofrecerte la mejor experiencia posible al proporcionar información precisa y útil sobre nuestra institución y los servicios que ofrecemos. ¡Explora y descubre más sobre nosotros!</p>
+    </div>
+    <div id="mision" class="row">
+      <div class="col-lg-6">
+        <div class="contenido">
+          <h2 class="text-center">Misión</h2>
+          <p class="text-justify">Nuestra misión es contribuir al desarrollo integral de la sociedad formando profesionales comprometidos con la excelencia académica, la ética profesional y el servicio a la comunidad.</p>
+        </div>
+      </div>
+      <div id="vision" class="col-lg-6">
+        <div class="contenido">
+          <h2 class="text-center">Visión</h2>
+          <p class="text-justify">Nos proyectamos como una institución líder en educación superior, reconocida por su innovación, calidad académica y contribución al desarrollo sostenible a nivel local e internacional.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Imagen -->
+    <div class="imagen-contacto">
+      <img src="FDYgE19WQAkWnv2.jpg_large" alt="FDYgE19WQAkWnv2" width="500">
+    </div>
+    <!-- Contacto -->
+    <div id="contacto" class="contacto">
+      <h2 class="text-center">Contacto</h2>
+      <p class="text-center">Mayra Zambrano</p>
+      <p class="text-center">Teléfono: 0979333797</p>
+      <p class="text-center">Correo electrónico: mairajisse@gmail.com</p>
+      <p class="text-center">Facebook: Mayra Zambrano</p>
+    </div>
+    <!-- Texto explicativo -->
+    <div class="texto-explicativo">
+      <h2 class="text-center">¡Explora nuestro sitio web!</h2>
+      <p class="text-center">Aquí encontrarás una amplia gama de información sobre nuestra institución, desde nuestra misión y visión hasta nuestros servicios y formas de contacto. ¡No dudes en explorar y aprender más sobre nosotros!</p>
+    </div>
+    <!-- Enlace para ir al inicio -->
+    <div class="text-center">
+      <a href="#" class="btn btn-primary">Ir al inicio</a>
+    </div>
+  </div>
+
+  <!-- Enlace al archivo JavaScript de Bootstrap (opcional) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
